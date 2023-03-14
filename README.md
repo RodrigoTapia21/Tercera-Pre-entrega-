@@ -8,4 +8,6 @@ si vamos al link y agregamos /admin, user: admin password: 123, podemos ver las 
 
 Los derechos de autor son mios, no me roben la idea. en "PRIVACY" pueden ver mi instagram y en "TERMS" pueden ver los terminos con los cuales trabaja un programador como yo, en equipo. 
 
+
+
 -----------TERCERA PRE ENTREGA RODRIGO TAPIA-----------
