@@ -1,4 +1,4 @@
-# Tercera-Pre-entrega-
+# Tercera-Pre-entrega RODRIGO TAPIA-
 
 
 Es una pagina wrb donde uno puede agregar las bebidas, clases y entrenadores que quisiera agregar a su pack.
