@@ -1,0 +1,27 @@
+{% extends "Gym/padre.html" %}
+
+{% load static %}
+
+{% block principal %}
+
+<h1>MENU DE ENTRENADORES</h1>
+
+{% if form %}
+
+<form action="{% url 'agregar/entrenador/' %}" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Agregar">
+</form>
+
+
+{% endif %}
+
+<ul>
+    {%  for entrenador in entrenadores  %}
+    <li> {{entrenador.id}} - {{ entrenador.nombre_entrenador }} - ${{ entrenador.precio_entrenador}}</li>
+    {% endfor %}
+</ul>
+
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "padre.html" %}
+
+{% load static %}
+
+{% block principal %}
+
+<body>
+    <p>Bebida buscada es: </p>
+
+    {% if bebida %}
+
+    <ul>
+    {% for bebida in bebida %}
+        <li> {{bebida.nombre_bebida}} </li>
+        <li> {{bebida.precio_bebida}} </li>
+        <li> {{bebida.marca_bebida}} </li>
+
+    {% endfor %}
+    </ul>
+
+    {% endif %}
+</body>
+</html>
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "Gym/padre.html" %}
+
+{% load static %}
+
+{% block principal %}
+
+<h1>MENU BEBIDAS</h1>
+
+{% if form %}
+
+<form action="{% url 'agregar/bebida/' %}" method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Agregar">
+</form>
+
+{% endif %}
+
+<ul>
+     {%  for bebida in bebidas %}  
+    <li> {{bebida.id}} - {{ bebida.nombre_bebida }} - ${{ bebida.precio_bebida}}</li>
+    {% endfor %}
+</ul>
+
+
+{% endblock %}

@@ -15,9 +15,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from Gym.views import index
+from Gym import views
+from Gym.views import index, agregar_bebida, agregar_clase, agregar_entrenador, buscar_bebida, buscar, busquedaBebida, mostrar_bebida, mostrar_otro
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", index, name="index")
+    path("", index, name="index"),
+    path('agregar/bebida/',agregar_bebida, name="agregar/bebida/" ),
+    path('agregar/entrenador/', agregar_entrenador, name= 'agregar/entrenador/'),
+    path('agregar/clase/', agregar_clase, name='agregar/clase/'),
+    path("buscar/", busquedaBebida, name= 'buscar/'),
+    path('resultado/', buscar,name= 'resultado/'),
+    path('buscar_bebida', buscar_bebida, name= 'buscar_bebida'),
+    path('mostrar/bebida/', mostrar_bebida, name='mostrar/bebida/'),
+    path('mostrar/otro/', mostrar_otro, name= 'mostrar/otro/'),
 ]
